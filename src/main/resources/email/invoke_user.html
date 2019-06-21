@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="zh" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <base target="_blank">
+    <style type="text/css">
+        ::-webkit-scrollbar{ display: none; }
+    </style>
+    <style id="cloudAttachStyle" type="text/css">
+        #divNeteaseBigAttach, #divNeteaseBigAttach_bak{display:none;}
+    </style>
+
+</head>
+<body tabindex="0" role="listitem">
+
+
+
+
+<table style="-webkit-font-smoothing: antialiased;font-family:'微软雅黑', 'Helvetica Neue', sans-serif, SimHei;padding:35px 50px;margin: 25px auto; background:rgb(247,246, 242); border-radius:5px" border="0" cellspacing="0" cellpadding="0" width="640" align="center">
+    <tbody>
+    <tr>
+        <td style="color:#000;"><img width="200px" height="57px" src="https://coding-net-production-static.codehub.cn/coding_h_1120.png" alt="Coding.net"></td>
+    </tr>
+    <tr><td style="padding:0 20px"><hr style="border:none;border-top:1px solid #ccc;"></td></tr>
+    <tr>
+        <td style="padding: 20px 20px 20px 20px;">
+            Hi <span  th:text="${username}"></span>,
+        </td>
+    </tr>
+    <tr>
+        <td valign="middle" style="line-height:24px;padding: 15px 20px;">
+            请点击以下链接确认激活你的账户：
+        </td>
+    </tr>
+    <tr>
+        <td style="height: 50px;color: white;" valign="middle">
+            <div style="padding:10px 20px;border-radius:5px;background: rgb(64, 69, 77);margin-left:20px;margin-right:20px">
+                <a th:href="@{${url}}"  style="word-break:break-all;line-height:23px;color:white;font-size:15px;text-decoration:none;" >
+                    https://dev.xch.com/app/detect?link=https%3A%2F%2Fdev.tencent.com%2Factivate%2Femail%2F18881934641%40163.com%2Fkey%2F1e8483da4665101f307c42eadc7e3ea8d551a71c
+                </a>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px 20px 20px 20px">
+            请勿回复此邮件。
+        </td>
+    </tr>
+    <tr>
+        <td style="padding: 20px 20px 20px 20px">
+            - microBlog
+        </td>
+    </tr>
+    <tr>
+        <td style="padding:0 20px;"><hr style="border:none;border-top:1px solid #ccc;"></td>
+    </tr>
+    <tr>
+        <td style="padding:0 20px;font-size:9pt; color:#b5b0b0">
+            <span style="float:left;">如果你没有注册过 microBlog，请忽略此邮件。</span>
+        </td>
+    </tr>
+    </tbody>
+</table>
+
+<style type="text/css">
+    body{font-size:14px;font-family:arial,verdana,sans-serif;line-height:1.666;padding:0;margin:0;overflow:auto;white-space:normal;word-wrap:break-word;min-height:100px}
+    td, input, button, select, body{font-family:Helvetica, 'Microsoft Yahei', verdana}
+    pre {white-space:pre-wrap;white-space:-moz-pre-wrap;white-space:-pre-wrap;white-space:-o-pre-wrap;word-wrap:break-word;width:95%}
+    th,td{font-family:arial,verdana,sans-serif;line-height:1.666}
+    img{ border:0}
+    header,footer,section,aside,article,nav,hgroup,figure,figcaption{display:block}
+    blockquote{margin-right:0px}
+</style>
+
+
+
+<style id="netease_mail_footer_style" type="text/css">#netease_mail_footer{display:none;}</style>
+
+
+<style id="ntes_link_color" type="text/css">a,td a{color:#064977}</style>
+
+</body></html>
