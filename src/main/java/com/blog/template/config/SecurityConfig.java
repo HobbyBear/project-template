@@ -25,8 +25,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Autowired
     private CustomerUserDetailService userDetailService;
 
-    @Autowired
-    private FindByIndexNameSessionRepository sessionRepository;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -63,8 +61,5 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return super.authenticationManager();
     }
 
-    @Bean
-    public SpringSessionBackedSessionRegistry sessionRegistry() {
-        return new SpringSessionBackedSessionRegistry(sessionRepository);
-    }
+
 }
